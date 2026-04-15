@@ -1,4 +1,3 @@
-import { useState } from "react"
 import searchIcon from "../assets/images/search-icon.svg"
 import loadingGif from "../assets/images/loading-gif.gif"
 

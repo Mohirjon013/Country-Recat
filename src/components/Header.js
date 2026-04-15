@@ -72,7 +72,7 @@ function Header({country, setCountry, loading, setLoading}){
                     <div className="flex items-center justify-between">
                         <label className="w-[49%] cursor-pointer">
                             <input onChange={(e) => setChooseImg(URL.createObjectURL(e.target.files[0]))} type="file" className="hidden"/>
-                            <img className="h-[180px] rounded-md" src={chooseImg} width={"100%"}/>
+                            <img className="h-[180px] rounded-md" src={chooseImg} width={"100%"} alt="imgs"/>
                         </label>
                         <div className="w-[49%] space-y-2">
                             <input onChange={(e) => setCityName(e.target.value)} value={cityName} className="w-full p-2 rounded-lg outline-none" type="text" placeholder="Enter City name" required/>
