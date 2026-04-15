@@ -31,7 +31,7 @@ function Hero({countries, country, setCountry, loading, setLoading}){
         }
         else{
             setTimeout(() => {
-                const selectedCity = countries.filter(item => item.id == selectValue)
+                const selectedCity = countries.filter(item => item.id === selectValue)
                 setCountry(selectedCity)
                 setLoading(false)
             }, 800);
