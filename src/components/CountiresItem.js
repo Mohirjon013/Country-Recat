@@ -3,7 +3,7 @@ import React from 'react'
 function CountiresItem({item}) {
     return (
         <li className="w-[264px] pb-[20px] rounded-md shadow-lg bg-white">
-            <img className="object-cover rounded-t-md h-[160px] mb-[24px]" src={item.flag} width={"264"} height={"160"}/>
+            <img className="object-cover rounded-t-md h-[160px] mb-[24px]" src={item.flag} width={"264"} height={"160"} alt='flag-img'/>
         
             <div className="pl-[24px]">
                 <h2 className="font-[700] text-[20px] leading-[26px] ">{item.name}</h2>

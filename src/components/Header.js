@@ -57,7 +57,7 @@ function Header({country, setCountry, loading, setLoading}){
                 <h1 className="text-[24px] leading-[32px] font-[700]">Where in the world?</h1>
                 <div className="flex items-center gap-2">
                     <button className="flex items-center gap-2 border border-slate-500 py-1 px-2 rounded-lg">
-                        <img src={moonIcon} width={"20"} height={"20"} />
+                        <img src={moonIcon} width={"20"} height={"20"} alt="moon-icon" />
                         <p className="text-[16px] font-medium">Dark Mode</p>
                     </button>
                     <button onClick={() => setIsOpen(true)} className="p-1 rounded-md border border-slate-400">

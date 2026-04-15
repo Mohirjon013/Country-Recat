@@ -24,7 +24,7 @@ function Hero({countries, country, setCountry, loading, setLoading}){
         const selectValue = e.target.value
         setLoading(true)
 
-        if(selectValue == 0){
+        if(Number(selectValue) === 0){
             setTimeout(() => {
                 setCountry(countries)
                 setLoading(false)
@@ -44,7 +44,7 @@ function Hero({countries, country, setCountry, loading, setLoading}){
                 <div className="w-[1250px] mx-auto px-[20px]">
                     <div className=" mb-[48px] flex items-center justify-between">
                         <label className="w-[425px] py-3 px-4 rounded-md shadow-md flex items-center gap-3 bg-white">
-                            <img src={searchIcon} width={"24"} height={"24"} />
+                            <img src={searchIcon} width={"24"} height={"24"} alt="search-icon"/>
                             <input onChange={handleSearchCity} className="w-full outline-none" type="search" placeholder="Search for a country..." />
                         </label>
                         <select onChange={handleChangeSelect}>
@@ -54,7 +54,7 @@ function Hero({countries, country, setCountry, loading, setLoading}){
                     </div> 
 
                     <div className="flex flex-wrap items-start justify-between gap-y-7">
-                        { loading ? <img className="mx-auto mt-8" src={loadingGif} width={"200"} height={"200"} /> 
+                        { loading ? <img className="mx-auto mt-8" src={loadingGif} width={"200"} height={"200"} alt="loading-icon"/> 
                             : country.map(item => {
                                 return (
                                     <CountiresItem item={item} key={item.id}/>
